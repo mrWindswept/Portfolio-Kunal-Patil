@@ -1,41 +1,64 @@
-@charset "utf-8";
-body{
 
+<<<<<<< HEAD
     background-image: linear-gradient(to right, #7ff5ac, #faf4f4);
+=======
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 
-    margin: 0px;
 
-    padding: 0px;
+/* css variables */ 
+@import url(./partials/_variables.css);
 
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+/* start navigation */ 
+
+nav{
+    background-image: linear-gradient(to bottom , #f1f1f1, #faf4f4);
 }
 
-ul{
-
-    list-style: none;
-
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
 }
 
-a{
-
-    text-decoration: none;
-
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem ;
 }
 
-section{
-
-    position: relative;
-
-    width: 100%;
-
-    height: 95vh;
-
-    background-image: url("\img\back.png");
-
-    background-repeat: no-repeat;
-
-    background-size: cover;
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
 }
 
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */ 
+
+/* Banner Area */ 
+
+.site-main .site-banner {
+    background-image: linear-gradient(to bottom right, #7ff5ac, #faf4f4);
+}
+
+<<<<<<< HEAD
 nav{
 
     display: flex;
@@ -45,28 +68,39 @@ nav{
     background-color: rgb(218, 218, 218);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     padding: 0px 5%;
+=======
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-nav ul{
-
-    display: flex;
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
 }
 
-.toggle{
-
-    display: none;
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
 }
 
-nav ul li a{
-    margin: 30px;
-    font-family:  Geneva, Verdana, sans-serif;
-    color: #505050;
-    font-size: 16px;
-    font-weight: 700;
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
 }
 
-.logo{
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+    border-radius: 15px;
+}
 
+
+<<<<<<< HEAD
     font-family: Geneva, Verdana, sans-serif;
     display: inline-block;
     color: #505050;
@@ -79,42 +113,42 @@ nav ul li a{
     line-height: inherit;
     white-space: nowrap;
 }
+=======
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 
-.active{
+/* End Banner Area */ 
 
-    font-weight: bold;
-    color: #505050;
-}
+/* Start About Area */ 
 
-.text-container p:nth-child(1){
 
+<<<<<<< HEAD
     font-family: Cambria;
     font-weight: bold;
     color: #6d6d6d;
     font-size: 22px;
     
+=======
+.site-main .about-area{
+    padding: 8rem 5rem;
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.text-container p:nth-child(2){
-
-    font-family: Cambria;
-    font-weight: bolder;
-    color: #1a1a1a;
-    font-size: 40px;
-    letter-spacing: 1px;
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 21px;
 }
 
-.text-container p:nth-child(3){
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    line-height: 30px;
-    color: #403e3e;
-    font-size: 32px;
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
 }
 
-.text-container p{
+/* End About Area */ 
 
+
+/* Start Brand Area */ 
+
+<<<<<<< HEAD
     line-height: 0px;
     margin: 46px 0px 26px;
     justify-content: center;
@@ -129,33 +163,53 @@ nav ul li a{
     top: 42%;
     transform: translate(-14%,-42%);
     
+=======
+.site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
 }
 
-.text-container button{
-
-    height: 42px;
-    width: 130px;
-    border-radius: 15px;
-    outline: none;
-    margin: 0px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: unset;
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.dnld-resume{
-
-    color: #ffffff;
-    background-color: #0b0b0b;
-    border: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 5px solid var(--border-color);
+    border-radius: 35%;
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform .5s ease;
+    background-image: radial-gradient(#ffffff , #e0dcdc);
 }
 
-button:active{
-
-    transform: scale(1.1);
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 50%;
 }
 
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    /*box-shadow: var(--box-shadow);*/
+    transform: scale(1.2);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
+    filter: brightness(1.2);
+}
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+<<<<<<< HEAD
 /*.profile{
 
     height: 490x;
@@ -166,177 +220,192 @@ button:active{
     transform: translate(-25%,15%);
     border-radius: 30%;
 }*/
-
-.about{
-    width: 80%;
-    height: 330px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    display: flex;
-    margin: -7% auto 0px auto;
-    justify-content: space-evenly;
+=======
+.site-main .brand-area .experience-area .years-area{
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
     position: relative;
-    align-items: center;
 }
 
-.about img{
+.site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px; top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 
-    height: 250px;
-    border-radius: 50%;
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
 }
 
-.about-text{
-
-    width: 550px;
+.site-main .brand-area .experience-area .years-area h2 > span{
+    font: normal 600 22px/30px var(--roboto);
 }
 
-.about-text p:nth-child(1){
-    color: #403e3e;
-    line-height: 0px;
-    font-weight: bold;
-    font-size: 28px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 10rem;
 }
 
-.about-text p:nth-child(2){
-    color: #3e3d3d;
-    line-height: 5px;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* End Brand Area */ 
+
+/* Services Area */ 
+
+.site-main .services-area{
+    padding: 7rem 2rem;
 }
 
-.about-text p:nth-child(3),
-.about-text p:nth-child(4){
-    color: #7e7d7d;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.site-main .services-area .services-title{
+    padding: 0 14rem;
 }
 
-.about-text button{
-
-    height: 40px;
-    width: 120px;
-    color: #ffffff;
-    outline: none;
-    border: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #262525;
-    border-radius: 5px;
+.site-main .services-area .services-title h1{
+    font-size: 35px;
 }
 
-.service{
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
 
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+
+<<<<<<< HEAD
     padding: 2% 10% 0px 10%;
     height: 600px;
     /*background-color: #ffffff;*/
     background-image: linear-gradient(to right, #ece7e7, #ffffff);
 }
+=======
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 
-.service-text{
+/* End Services Area */ 
 
-    width: 500px;
-    margin: 50px 0px;
+
+/* Project Area */ 
+
+.site-main .project-area{
+    padding: 4rem 0;
 }
 
-.service p:nth-child(1){
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
 
+<<<<<<< HEAD
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: #3e3d3d;
     line-height: 0px;
+=======
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.service p:nth-child(2){
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
 
+<<<<<<< HEAD
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: #3e3d3d;
     line-height: 5px;
+=======
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.servicep:nth-child(3){
 
+<<<<<<< HEAD
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #585555;
+=======
+/* End Project Area */ 
+
+
+/* About Me */ 
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.box-1, .box-2, .box-3{
-
-    width: 300px;
-    height: 320px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 1);
+.site-main .about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
 }
 
-.box-1, .box-2, .box-3{
+.site-main .about-area .client .client-img{
+    padding: 2rem;
+}
 
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+
+<<<<<<< HEAD
     background-image: linear-gradient(to left, #000000, #2c2b2b);
     border-radius: 20px;
+=======
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/ 20px var(--roboto);
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.box-1 span,
-.box-2 span,
-.box-3 span{
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
 
-    width: 40px;
-    height: 40px;
+.site-main .about-area .owl-carousel .owl-item{
     display: flex;
-    border-radius: 50%;
-    background-color: #ffffff;
     justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.box-container{
-
-    display: flex;
-    justify-content: space-between;
+    padding: 0 1.5rem;
 }
 
-.box-1 p:nth-child(2),
-.box-2 p:nth-child(2),
-.box-3 p:nth-child(2){
-
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    line-height: 0px;
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
 }
 
-.box-1 p:nth-child(3),
-.box-2 p:nth-child(3),
-.box-3 p:nth-child(3){
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    width: 240px;
-    color: #8f8f8f;
-    margin: 0px 0px 20px 0px;
+
+/* End About Me */ 
+
+/* Subscribe me */ 
+
+.site-main .subscribe-us-area .subscribe{
+    
+    background: url(../img/subscribe-bg.png) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
 }
 
-.box-1 button,
-.box-2 button,
-.box-3 button{
-
-    height: 40px;
-    width: 140px;
-    background-color: #ffffff;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-}
-
+<<<<<<< HEAD
 .contact{
     width: 100%;
     height: 300px;
@@ -347,86 +416,71 @@ button:active{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+=======
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/ 30px var(--roboto);
+    color: whitesmoke;
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
 }
 
-.contact p{
-
-    color: #ffffff;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 2px sold #ffffff;
-    font-weight: bold;
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
 }
 
-.contact button{
-
-    width: 200px;
-    height: 40px;
-    background-color: #ffffff;
-    outline: none;
-    border: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 10px;
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px var(--roboto);
 }
 
-footer{
-
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
 }
 
-footer p:nth-child(1){
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    align-items: center;
-    font-weight: bold;
-    color: #0b0b0b;
-
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
 }
 
-.soc-icons{
+/* End subscribe me */ 
 
-    display: flex;
-}
-.soc-icons a{
+/* Footer Area */ 
 
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e6e3e3;
-    margin: 20px 10px;
-    border-radius: 50%;
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
 }
 
-.copyright{
-    color: #565555;
-    font-size: 16px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
 }
 
-.soc-icons i{
-
-    color: #000000;
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
 }
 
-.soc-icons a:hover,
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+
+/* End Footer */ 
+
+/* side icons */
+
 .side-bar a:hover{
     background-color: #000000;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     transition: all ease 0.5s;
 }
 
-.soc-icons a:hover i,
 .side-bar a:hover i{
     color: #ffffff;
     transition: all ease 0.5s;
@@ -460,6 +514,7 @@ footer p:nth-child(1){
     color: #000000;
     font-size: 20px;
 }
+<<<<<<< HEAD
 
 @media(max-width:1000px){
 
@@ -687,3 +742,5 @@ footer p:nth-child(1){
         width: 150px;
     }
 }
+=======
+>>>>>>> fee135244b2251ff2e12acee4cb78690e79edf18
