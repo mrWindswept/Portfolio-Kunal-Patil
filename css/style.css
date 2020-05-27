@@ -10,6 +10,16 @@
 @import url(./partials/_global.css);
 
 
+/* loading class */
+.loader {
+    border-top: 16px solid #7ff5ac;
+    border-bottom: 16px solid #ffffff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
 /* start navigation */ 
 
 nav{
@@ -189,6 +199,14 @@ nav{
 /* End Brand Area */ 
 
 /* Services Area */ 
+section.brand-area{
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+section.services-area,
+section.about-area{
+    background-image: url(../img/body-bg.png);
+}
 
 .site-main .services-area{
     padding: 7rem 2rem;
@@ -397,3 +415,8 @@ footer.footer-area .social a:hover > i{
     color: #000000;
     font-size: 20px;
 }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
