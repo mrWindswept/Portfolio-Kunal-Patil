@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kunal | Web Developer</title>
+    <link rel = "icon" href ="./img/kp1.png" type = "image/x-icon"> 
 
 
     <!--  Bootstrap css file  -->
@@ -34,7 +35,6 @@
 
 <body>
 
-
     <!--  ======================= Start Header Area ============================== -->
 
     <header class="header_area">
@@ -52,13 +52,16 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">about</a>
+                            <a class="nav-link" href="#abt">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">services</a>
+                            <a class="nav-link" href="#skl">skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link" href="#ser">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cnt">contact</a>
                         </li>
 
                     </ul>
@@ -80,7 +83,7 @@
                     <div class="col-lg-6 col-md-12 site-title">
                         <h3 class="title-text">Hi,</h3>
                         <h1 class="title-text text-uppercase">I am Kunal</h1>
-                        <h4 class="title-text text-uppercase">A Web Developer</h4>
+                        <h4 class="title-text text-uppercase">A Web Developer !</h4>
                     </div>
                     <div class="col-lg-6 col-md-12 banner-image">
                         <img src="./img/vector1.png" alt="banner-img" class="img-fluid">
@@ -92,12 +95,12 @@
 
         <!--  ========================= About Area ==========================  -->
 
-        <section class="about-area">
+        <section id="abt" class="about-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="about-image">
-                            <img src="./img/profile.png" alt="profile" class="img-fluid">
+                            <img src="./img/profile1.png" alt="profile" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
@@ -126,12 +129,12 @@
 
         <!--  ======================== Brand Area ==============================  -->
 
-        <section class="brand-area">
+        <section id="skl" class="brand-area">
             <div class="d-flex flex-row years-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">My Skills</h1>
+                        <h1 class="text-uppercase title-text">My Skills</h1><br><br>
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12">
                         <div class="first-row row">
@@ -162,8 +165,19 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="single-brand">
+                                    <img src="./img/brands/node.png" alt="Brand-6">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
                                     <img src="./img/brands/ps.jpg" alt="Brand-6">
                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+
                             </div>
                         </div>
                     </div>
@@ -175,11 +189,11 @@
 
         <!--  ====================== Start Services Area =============================  -->
 
-        <section class="services-area">
+        <section id="ser" class="services-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">Recently Done Projects</h1>
+                        <h1 class="text-uppercase title-text">Recent Projects</h1>
                     </div>
                 </div>
                 <div class="container services-list">
@@ -249,44 +263,21 @@
         <!--  ====================== End Services Area =============================  -->
 
         <!--  ========================== Subscribe me Area ============================  -->
-        <section class="subscribe-us-area">
-            <div class="container subscribe">
-                <div class="row">
-                    <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Get Update From anywhere</h4>
-                        <p class="para">Contact Me</p>
-                    </div>
-                </div>
-                <div class="d-sm-flex justify-content-center">
-                    <form class="w-50">
-                        <div class="row d-flex flex-row flex-wrap">
-                            <div class="col input-textbox">
-                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="col">
-                                <div class="btn-submit">
-                                    <button type="submit" class="btn btn-success float-right">Connect</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
         <!--  ========================== End Subscribe me Area ============================  -->
 
 
     </main>
     <!--  ======================= End Main Area ================================ -->
 
-    <footer class="footer-area">
+    <footer class="footer-area" id="cnt">
         <div class="container">
             <div class="">
                 <div class="site-logo text-center py-4">
                     <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                </div>
+                </div><br>
                 <div class="social text-center">
-                    <h5 class="text-uppercase">Follow me</h5>
+                    <h6 class="text-uppercase">Want to contact?</h6>
+                    <h5 class="text-uppercase">Follow me to get connected</h5>
                 <a href="https://www.linkedin.com/in/kunal-patil-329b10157" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/kartik_kp99" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/mrWindswept/" target="_blank"><i class="fab fa-github"></i></a>
@@ -294,7 +285,7 @@
                 </div>
                 <div class="copyrights text-center">
                     <p class="para">
-                        Copyright ©2019 All rights reserved | 
+                        Copyright © 2020 All rights reserved | 
                         <a href="#"><span style="color: var(--primary-color);">Kunal Patil</span></a>
                     </p>
                 </div>
@@ -315,7 +306,7 @@
 			<div class="modal-dialog">
 			  <div class="modal-content">
 				<div class="modal-header">
-				  <h3 class="modal-title" id="exampleModalLabel">Any ideas? Feel free to contact!</h3>
+				  <h3 class="modal-title" id="exampleModalLabel">Get in touch!</h3>
 				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				  </button>
@@ -342,12 +333,14 @@
 				</div>
 				<div class="modal-footer">
 				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				  <button type="button" class="btn btn-primary">Send message</button>
+				  <button type="button" class="btn btn-primary" id="sent" onclick="cls()">Send message</button>
 				</div>
 			  </div>
 			</div>
 		  </div>
-		</div
+        </div>
+        
+        <!--  ======================= End of Modal ================================ -->
 
 
     <!--  Jquery js file  -->
@@ -381,6 +374,10 @@
             keyboard: false});
 
         }, 5000);
+
+        function cls(){
+            alert("Details recieved! I will contact you soon...");           
+        }
     
 
     </script>
